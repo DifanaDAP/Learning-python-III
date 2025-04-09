@@ -9,7 +9,7 @@ response = requests.get(url)
 # 2. Check status and parse json data
 if response.status_code == 200:
     data = response.json()
-    print("API REsult:")
+    print("API Result:")
     print(f"Name: {data['name']}")
     print(f"Etimated Age:{data['age']}")
     print(f"Sample size: {data['count']}")
